@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F6F7"
+    tools:context=".DetailWisata">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <ImageView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/card_image" />
+
+            <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                android:id="@+id/img_wisata_received"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                app:siShape="@drawable/card_image" />
+
+            <TextView
+                android:id="@+id/nama_received"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="230dp"
+                android:text="Nama tempat"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="254dp"
+                app:srcCompat="@drawable/location2" />
+
+            <TextView
+                android:id="@+id/lokasi_received"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="250dp"
+                android:text="Nama tempat"
+                android:textSize="13sp" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/card_image">
+
+            <TextView
+                android:id="@+id/keterangan_received"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detail Disini"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>
